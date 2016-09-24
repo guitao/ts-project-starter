@@ -1,9 +1,13 @@
 {
     "compilerOptions": {
         "sourceMap": true,
-        "target": "es5",
-        "module": "commonjs",
-        "removeComments": true
+        "noImplicitAny": true,
+        "removeComments": true,
+        "noFallthroughCasesInSwitch": true,
+        "strictNullChecks": true
+    },
+    "awesomeTypescriptLoaderOptions":{
+
     },
     "exclude": [
         "node_modules",

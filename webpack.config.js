@@ -14,22 +14,22 @@ module.exports = {
     // Turn on sourcemaps
     devtool: 'source-map',
     resolve: {
-        extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
+        extensions: [ '.webpack.js', '.web.js', '.ts', '.js']
     },
     // Add minification
     plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            }
-        })
+        // new webpack.optimize.UglifyJsPlugin({
+        //     compress: {
+        //         warnings: false
+        //     }
+        // })
     ],
     module: {
         loaders: [
-            { test: /\.tsx?$/, loader: 'ts-loader' }
+            { test: /\.tsx?$/, loader: 'awesome-typescript-loader' }
         ]
+    },
+    devServer: {
+        contentBase: "./build", //static server根目录
     }
-    // devServer: {
-    //     contentBase: "./build", //static server根目录
-    // }
 }

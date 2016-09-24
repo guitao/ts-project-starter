@@ -54,3 +54,20 @@ https://marketplace.visualstudio.com/items?itemName=eg2.tslint
             
 `"quotemark": [false,"double"]`
 
+----
+
+# typescript 2
+
+
+## 安装beta版webpack
+
+ //查看版本号
+ npm view webpack dist-tags
+ 
+ { latest: '1.13.2', beta: '2.1.0-beta.25' }
+ 
+ npm install --save-dev webpack@2.1.0-beta.25
+
+
+## awesome-typescript-loader 替代ts-loader
+  
