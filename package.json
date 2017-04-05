@@ -2,7 +2,7 @@
   "name": "ts-project",
   "version": "1.0.2",
   "description": "TypeScript Project Starter",
-  "author": "nshen.net",
+  "author": "nshen121@gmail.com",
   "license": "MIT",
   "main": "./built/bundle.js",
   "types": "./built/src/app.d.ts",
